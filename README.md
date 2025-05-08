@@ -1,1 +1,0 @@
-# soldelarosa.github.io
