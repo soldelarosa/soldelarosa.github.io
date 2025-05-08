@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    <title>Tablas en html</title>
+    <style type="text/css">
+           *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           }
+        header, nav, main, footer{
+            width: 100%;
+            padding: 30px;
+            
+        }
+        header{
+            height: 100px;
+            background-color:skyblue;
+            color: bisque;
+        }
+        nav{
+            height: auto;
+            background-color:steelblue;
+        }
+        main{
+            height: auto;
+            background-color:aliceblue;
+        }
+        footer{
+            height: 60px;
+            background-color:royalblue;
+        }
+        section{
+            width: 70%;
+            height: auto;
+            background-color:cornflowerblue;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+           
+        header, footer{
+            text-align: center;
+        }   
+        nav ul li{
+            width: 10%;
+            background-color:azure;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            padding: 10px;
+            display: inline-block;
+            color:black;
+            padding-left: auto;
+            padding-right: auto;
+        } 
+        na ul li a{
+            text-align: center;
+          margin-bottom: auto;
+        }
+        nav ul{
+            text-align: center;
+        }
+        
+        }
+        p{
+            margin-bottom: 80px;
+            padding-bottom: 30px;
+        }
+           
+        table{
+            background-color:lightblue;
+        }
+        #tab_buap{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-spacing: 10px;
+            border-collapse: collapse
+        }
+        #tab_buap th{
+            background-color:slateblue;
+            color: whitesmoke;
+            height: 50px;
+        }
+        #tab_buap td{
+            background-color: blanchedalmond;
+            color: darkcyan;
+            height: 30px;
+            padding: 10px;
+        }
+        
+        #tab_buap th, #tab_buap td{
+            border-width: 1px;
+            border-color:aliceblue
+            border-style: solid;
+        }
+        #tab_libros{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            color:black;
+        }
+        #tab_libros th{
+            height: 50px;
+            background-color: floralwhite;
+            color: blue;
+        }
+        #tab_libros tbody tr:nth-child(even){
+            background-color:cornflowerblue;
+        }
+        #tab_libros tbody tr:nth-child(odd){
+            background-color:aliceblue;
+        }
+        #tab_libros tfoot tr{
+            background-color:darkblue;
+            color: white;
+        }
+        #tab_libros td{
+            height: 15px;
+            padding: 10px;
+        }
+        #tab_pelis{
+            width: 80% 
+            
+        }
+        #tab_pelis th{
+            background-color:azure
+            color: black;
+            height: 50px;
+            padding: 10px;
+            
+        }
+        #tab_pelis th, #tab_pelis td{
+            border-width: 3px;
+            border-style: solid;
+            border-color: cornflowerblue;
+            
+        }
+        #tab_pelis td{
+            height: 30px;
+            padding: 20px;
+            
+        }
+        #tab_pelis tbody tr:hover{
+            background-color: cornsilk;
+        }
+        
+        #tab_serie{
+            width: 1500px;
+            border-collapse: collapse;
+            background-color: skyblue;
+           
+        }
+        #tb_serie th, #tab_serie td{
+            
+            border:1px solid black;
+            padding: 10px;
+        }
+        #tab_serie th{
+            background-color: azure;
+            color: darkblue;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+           <div><a href="../Index.html"> <img style="width: 32px" src="../imagenes/home.png"> </a></div>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="../html/Formatos%20de%20texto.html">Formatos</a></li>
+            <li><a href="../html/listas.html">Listas</a></li>
+            <li><a href="../html/Enlaces.html">Enlaces</a></li>
+            <li><a href="../html/Tablas.html">Tablas</a></li>
+            <li><a href="../html/Images.html">Imagenes</a></li>
+            <li><a href="../html/Audios.html">Audios</a></li>
+            <li><a href="../html/videos.html">Videos</a></li>
+            <li><a href="../html/Formulario.html">Formularios</a></li>
+           
+            </ul>
+        </nav>
+        <main>
+            <section>
+            <h3>Tabla simple reglas de identificador</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam sem hendrerit felis sagittis, eu tristique turpis consectetur. Mauris tristique, sapien sit amet eleifend consequat, nisi magna viverra purus, vel blandit neque lacus et mauris. Praesent sed porttitor augue. Vestibulum sagittis cursus nulla, at varius neque varius a. Maecenas luctus, elit sed semper maximus, ante felis maximus diam, non iaculis tortor erat vel orci. Quisque quis leo eu sem efficitur suscipit non id purus. Donec at diam lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id metus eu ipsum aliquet lobortis eget ut ipsum. Suspendisse pellentesque.
+            </p>
+                <table id="tab_buap" border="1">
+                    <thead>
+                        <tr>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                            <th>Facultad</th>
+                            <th>Celular</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20211578945</td>
+                            <td>Maximo Leon Zavaleta</td>
+                            <td>Arquitectura</td>
+                            <td>2457896312</td>
+                            <td>maximo_123@gmail.com</td>
+                       </tr>
+                        
+                        <tr>
+                            <td>2321575945</td>
+                            <td>Javier Vaca Vazquez</td>
+                            <td>Arquitectura</td>
+                            <td>24478102312</td>
+                            <td>fass_3@gmail.com</td>
+                       </tr>   
+                        
+                        <tr>
+                            <td>20181573945</td>
+                            <td>Jazmin Leon Perez</td>
+                            <td>Diseño</td>
+                            <td>2227896312</td>
+                            <td>jazz_l@gmail.com</td>
+                       </tr>   
+                        
+                        <tr>
+                            <td>20171573045</td>
+                            <td>Marisol Cuellar Rojas</td>
+                            <td>Diseño</td>
+                            <td>2222789632</td>
+                            <td>Ross_Va@gmail.com</td>
+                       </tr>   
+                    
+                        <tr>
+                            <td>2017784105</td>
+                            <td>Jessica Rojas Diaz</td>
+                            <td>Quimica</td>
+                            <td>22245879</td>
+                            <td>j33s_05@gmail.com</td>
+                       </tr>   
+                    </tbody>
+                </table>
+        </section>
+            
+            <section>
+            <h3>Tabla cebra</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam sem hendrerit felis sagittis, eu tristique turpis consectetur. Mauris tristique, sapien sit amet eleifend consequat, nisi magna viverra purus, vel blandit neque lacus et mauris. Praesent sed porttitor augue. Vestibulum sagittis cursus nulla, at varius neque varius a. Maecenas luctus, elit sed semper maximus, ante felis maximus diam, non iaculis tortor erat vel orci. Quisque quis leo eu sem efficitur suscipit non id purus. Donec at diam lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id metus eu ipsum aliquet lobortis eget ut ipsum. Suspendisse pellentesque.
+            </p>
+                <table id="tab_libros" border="1">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Editorial</th>
+                            <th>Año</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cronicas de una muerte anunciada</td>
+                            <td>Gabriel Garcia Marquez</td>
+                            <td>Editorial Planeta</td>
+                            <td>1981</td>
+                            <td>$250.00</td>
+                       </tr>
+                        
+                        <tr>
+                            <td>Momo</td>
+                            <td>Michael</td>
+                            <td>Alfaguara</td>
+                            <td>1984</td>
+                            <td>$180.00</td>
+                       </tr>   
+                      
+                         <tr>
+                            <td>Dracula</td>
+                            <td>Bram Stocker</td>
+                            <td>Porrua</td>
+                            <td>1897</td>
+                            <td>$350.00</td>
+                       </tr>  
+                        
+                         <tr>
+                            <td>Un olor dulce a muerte</td>
+                            <td>Guillermo Arriaga Fernández</td>
+                            <td>De bolsillo</td>
+                            <td>2017</td>
+                            <td>$180.00</td>
+                       </tr>  
+                        
+                         <tr>
+                            <td>El retrato de Dorian Grey</td>
+                            <td>Oscar Wilde</td>
+                            <td>Porrua</td>
+                            <td>1891</td>
+                            <td>$290.00</td>
+                       </tr>  
+                        
+                         <tr>
+                            <td>El Perfume</td>
+                            <td>Patrick Sumsquid</td>
+                            <td>Planeta</td>
+                            <td>1985</td>
+                            <td>$350.00</td>
+                       </tr>  
+                    </tbody>
+                    <tfoot>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td>1,600</td>
+                    
+                    </tfoot>
+                </table>
+        </section>
+            
+            
+            <section>
+            <h3>Tabla Hover</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam sem hendrerit felis sagittis, eu tristique turpis consectetur. Mauris tristique, sapien sit amet eleifend consequat, nisi magna viverra purus, vel blandit neque lacus et mauris. Praesent sed porttitor augue. Vestibulum sagittis cursus nulla, at varius neque varius a. Maecenas luctus, elit sed semper maximus, ante felis maximus diam, non iaculis tortor erat vel orci. Quisque quis leo eu sem efficitur suscipit non id purus. Donec at diam lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id metus eu ipsum aliquet lobortis eget ut ipsum. Suspendisse pellentesque.
+            </p>
+                
+                <table id="tab_pelis">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Director</th>
+                            <th>Productora</th>
+                            <th>Año</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Intererestelar</td>
+                            <td> Christopher Nolan</td>
+                            <td>Warner Bros</td>
+                            <td>2014</td>
+                            
+                       </tr>
+                        
+                        <tr>
+                            <td>Pull Fiction</td>
+                            <td>Quentin Tarantino</td>
+                            <td>Miramax</td>
+                            <td>1994</td>
+                            
+                       </tr>   
+                      
+                         <tr>
+                            <td>Blanca Nieves</td>
+                            <td>David Hard</td>
+                            <td>Walt Disney</td>
+                            <td>1940</td>
+                       </tr>  
+                        
+                         <tr>
+                            <td>Spiderman</td>
+                            <td>Jhon Wats</td>
+                            <td>Marvel Studios</td>
+                            <td>2021</td>
+                       </tr>  
+                        
+                         <tr>
+                            <td>Mujer Bonita</td>
+                            <td>Gary Marshall</td>
+                            <td>Touchstone</td>
+                            <td>1990</td>
+                           
+                       </tr>  
+                        
+                         <tr>
+                            <td>Forest Gump</td>
+                            <td>Robert Zemeckis</td>
+                            <td>Paramount</td>
+                            <td> 1994</td>
+                            
+                       </tr>  
+                    </tbody>
+                    
+                </table>
+        </section>
+        <section style="overflow-x:auto">
+            <h2>Tabla hoverflow</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et arcu dolor. Nam consequat a libero non pharetra. Duis non ex vel felis posuere pretium. Proin ornare dui in erat facilisis convallis. Vivamus vel arcu sit amet ligula ullamcorper lobortis non eget magna. Cras vel metus gravida velit ultrices dictum. Integer varius est massa, id semper libero semper et. In hac habitasse platea dictumst. Suspendisse vel pellentesque enim, sed imperdiet dui. Nulla facilisi. In scelerisque, orci consequat varius molestie, felis risus aliquet ex, quis tincidunt risus dui non tellus. Orci.</p>
+            
+            <table id="tab_serie">
+              <head>
+                 <tr>
+                     <th>Serie</th>
+                     <th>Año</th>
+                     <th>Género</th>
+                     <th colspan="2">Director</th>
+                     <th colspan="2">País</th>
+                     <th>Temporadas</th>
+                  </tr>
+                </head>
+                <tbody>
+                  <tr>
+                      <td>House of cards</td>
+                      <td>Policial</td>
+                      <td>2013</td>
+                      <td>Beau Williams</td>
+                      <td>Suecia</td>
+                      <td>2</td>
+                    </tr>                
+                
+                     <tr>
+                      <td>Hora de aventura</td>
+                      <td>Fantasia</td>
+                      <td>2018</td>
+                      <td>Pendleton</td>
+                      <td>Estados Unidos</td>
+                      <td>10</td>
+                    </tr>  
+                    
+                     <tr>
+                      <td>DR.House</td>
+                      <td>Drama medico</td>
+                      <td>2004</td>
+                      <td>David Shore</td>
+                      <td>Estados Unidos</td>
+                      <td>6</td>
+                    </tr>  
+                    
+                     <tr>
+                      <td>Belleza verdadera</td>
+                      <td>Romance</td>
+                      <td>2020</td>
+                      <td>Kim San-hyup</td>
+                      <td>Corea del sur</td>
+                      <td>1</td>
+                    </tr>  
+                     <tr>
+                      <td>Shógun</td>
+                      <td>Drama</td>
+                      <td>Rachel Kondo</td>
+                      <td>Justin Marks</td>
+                      <td>2024</td>
+                      <td>1</td>
+                    </tr>  
+                    
+                     <tr>
+                      <td>Club de Cuervos</td>
+                      <td>Drama</td>
+                      <td>Gaz Alaskari</td>
+                      <td>Michael Lam</td>
+                      <td>2015</td>
+                      <td>4</td>
+                    </tr>
+                </tbody>
+            
+            
+            
+            
+            
+            </table>
+            
+            
+          </section>
+        
+        
+        
+        </main>
+        
+        
+         
+        
+    
+     <footer><h6>Elaborado por Marisol de la Rosa</h6></footer>
+    </body>
+   
+</html>

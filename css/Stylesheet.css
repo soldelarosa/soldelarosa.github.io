@@ -1,0 +1,171 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+header, nav,main, footer {
+    width: 100%;
+    padding: 30px;
+    background-color: #2D336B;
+    color:#FFF2F2;
+}
+header,footer{
+    text-align: center;
+    font-size: 48px;
+}
+nav{
+    height: auto;
+    background-color: #7886C7;
+}
+nav ul{
+    text-align: center;
+    color: white;
+}
+nav ul li{
+    width: 10%;
+    min-width: 100px;
+    height: 60px;
+    background-color: #FFF2F2;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+nav ul li a:link , nav ul li a:visited{
+    text-decoration: none;
+    color:darkslateblue;
+    
+}
+main{
+    height: auto;
+    background-color: #A9B5DF;
+    color:#FFF2F2;
+}
+footer{
+    font-size: 24px;
+    
+}
+section{
+    width: 70%;
+    height: auto;
+    background-color: #7886C7;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-align: justify;
+}
+p{margin-top: 20px;
+    
+}
+header h1{
+    width:  70%;
+    display: inline-block;
+}
+
+h2{
+    color: #2D336B;
+}
+img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+img_gif{
+    width: 30%;
+    border-radius: 50%;
+}
+img_float{
+    width: 20%;
+    min-width: 10%;
+}
+#img_izq{
+    float: left;
+    margin: 1px;
+    margin-right: 20px;
+}
+#img_der{
+    float: right;
+    margin: 1px;
+    margin-right: 20px;
+    padding: 10px;
+}
+#fondo{
+    height: 300px;
+    background-image: url("../imagenes/pareja.jpg");
+    background-size: cover;
+}
+video{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+video, iframe{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+}
+.box_videos {
+    text-align: center;
+}
+.box_videos section{
+    width: 40%;
+    min-width: 360px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.box_videos section p{
+    text-align: justify;
+}
+form{
+    width: 50%;
+    background-color: lightblue;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: darkslategrey;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+input[type=text], input[type=password]{
+    display: block;
+    width: 100%;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: darkslateblue;
+    color: aliceblue;
+    font-weight: bolder;
+}
+label{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+}
+input[type=submit] {
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1px;
+    border-radius:10px; 
+    background-color: mediumpurple;
+}
